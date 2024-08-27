@@ -1,4 +1,13 @@
 {% extends 'base.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'styles/app.scss' %}">
+{% endblock styles %}
+
+{% block scripts %}
+{% script 'app' %}
+{% endblock scripts %}
+
 {% block content %}
-<p>Hello Big World</p>
+<p>Hello World</p>
 {% endblock content %}
